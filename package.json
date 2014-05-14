@@ -1,6 +1,6 @@
 {
   "name": "raf-stream",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "An event emitter wrapping requestAnimationFrame",
   "main": "index.js",
   "scripts": {

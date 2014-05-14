@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/CMTegner/raf-stream",
   "dependencies": {
-    "raf": "~1.0.0"
+    "raf": "~1.0.1"
   },
   "devDependencies": {
     "testling": "~1.6.1",

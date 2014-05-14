@@ -1,23 +1,37 @@
 {
-  "name": "raf",
-  "version": "0.2.0",
-  "description": "requestAnimationFrame polyfill library",
+  "name": "raf-stream",
+  "version": "0.0.3",
+  "description": "An event emitter wrapping requestAnimationFrame",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "testling": "browserify test.js | testling",
+    "test": "tape test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chrisdickinson/raf.git"
+    "url": "git://github.com/CMTegner/raf-stream.git"
   },
   "keywords": [
+    "raf",
     "requestAnimationFrame",
-    "polyfill"
+    "stream"
   ],
   "author": "Chris Dickinson <chris@neversaw.us>",
+  "contributors": [
+    "Christian Maughan Tegnér <christian.tegner@gmail.com>"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CMTegner/raf-stream/issues"
+  },
+  "homepage": "https://github.com/CMTegner/raf-stream",
+  "dependencies": {
+    "raf": "~1.0.0"
+  },
   "devDependencies": {
-    "tape": "~2.11.0"
+    "testling": "~1.6.1",
+    "browserify": "~4.1.2",
+    "tape": "~2.12.3"
   },
   "testling": {
     "files": "test.js",

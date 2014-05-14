@@ -1,5 +1,5 @@
 var test = require('tape')
-  , raf = require('./index')
+  , raf = require('./index.js')
 
 test('continues to emit events', function(t) {
   var canvas = typeof document === "undefined" ? {} : document.createElement('canvas')
@@ -23,7 +23,7 @@ test('continues to emit events', function(t) {
 test('default tick function gets data', function(t) {
   var canvas = typeof document === "undefined" ? {} : document.createElement('canvas')
     , ee = raf(canvas, function tick(dt) {
-      t.true(!!dt, 'got data') // got data!
+      t.ok(dt >= 0, 'got data')
       ee.pause()
       t.end()
     })
